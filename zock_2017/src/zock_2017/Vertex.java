@@ -17,6 +17,7 @@ public class Vertex {
 	public String toString(){
 		
 		return "("+x+", "+y+") ";
+		
 	}
 	
 	
@@ -26,5 +27,31 @@ public class Vertex {
 	
 	}
 	
-
+	
+	public Vertex skalarMult (double s){
+		
+		return new Vertex(x*s, y*s);
+		
+	}
+	
+	public void skalarMultMod (double s){
+		
+		x=x*s;
+		y=y*s;		
+		
+	}
+	
+	
+	public Vertex add(Vertex v){
+		
+		return new Vertex(v.x+x, v.y+y);
+	}
+	
+	
+	public void addMod(Vertex v){
+		
+		x = v.x+x;
+		y = v.y+y;		
+	}
+	
 }
