@@ -97,7 +97,7 @@ public class GeometricObject{
 			GeometricObject that = (GeometricObject)thatObject;
 			return that.width==this.width && 
 					that.height==this.height &&
-					this.pos.equals(that);
+					this.pos.equals(that.pos);
 		}		
 		return false;		
 	}
